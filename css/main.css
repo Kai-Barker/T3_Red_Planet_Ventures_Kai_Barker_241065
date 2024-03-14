@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+.topNav{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100px;
+    width: 90%;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin: 100px;
+    left:50%;
+    margin-left: -850px;
+}
+.topNav img{
+    width: 350px;
+}
+
+.flexItemNav{
+    flex: 33%;
+    margin: auto;
+}
+.flexItemNav input{
+    height: 50px;
+    width: 400px;
+}
+
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    background-color:darkmagenta;
+}
+
+.flexItem1 img{
+    width: 100%;
+}
+
+.flexItem1{
+    padding: 100px;
+    flex: 50%;
+}
