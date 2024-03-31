@@ -379,6 +379,7 @@ body{
     left:50%;
     transform: translate(-50%,-50%);
     font-family: 'Porter Sans Heading';
+    text-align: center;
     color: #ffffff;
     font-size: 50px;
 }
@@ -633,4 +634,19 @@ body{
 }
 .flexFlightItem9--altColour{
     background-color: #98D5FF;
+}
+.viewCartBtn{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 3px 80px;
+    text-align: center;
+    justify-content: center;
+    background-color: #A4243B;
+    right: 20px;
+    bottom: -740%;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-sizing: border-box;
+    color: #ffffff;
 }
