@@ -650,3 +650,123 @@ body{
     box-sizing: border-box;
     color: #ffffff;
 }
+
+.flexContactContainer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 100px;
+    gap: 50px;
+}
+.flexContactItem1{
+    flex: 50%;
+    min-width: 100%;
+}
+.flexContactContainer2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 30px;
+    min-height: 100%;
+}
+.flexContactItem2{
+    flex: 20%;
+}
+.flexContactContainer3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 0px 20px;
+}
+.flexContactItem3{
+    flex: 50%;
+}
+.flexContactItem3 img{
+    width: 100%;
+}
+.flexContactItem3 p{
+    color: rgb(49, 49, 49);
+    font-size: 20px;
+}
+.flexContactContainer4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40%;
+    gap: 10px;
+}
+.flexContactItem4{
+    flex: 25%;
+}
+.flexContactItem4 a{
+    color:rgb(49, 49, 49);
+    text-decoration: none;
+}
+.flexContactContainer5{
+    display: flex;
+    flex-direction: column;
+    align-items: cent   ;
+    justify-content: center;
+    align-content: flex-start;
+}
+.flexContactItem5{
+    flex: 25%;
+    min-width: 100%;
+}
+.flexContactContainer6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.flexContactItem6{
+    flex: 25%;
+}
+.flexContactItem6 img{
+    width: 100%;
+}
+.flexContactContainer7{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 40%;
+}
+.flexContactItem7{
+    flex: 50%;
+}
+.flexContactContainer8{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    min-width: fit-content;
+    gap: 5px;
+}
+.flexContactContainer8 p{
+    flex: 50%;
+}
+.flexContactContainer9{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    margin-right: 100px;
+}
+.flexContactItem9{
+    flex: 30%;
+}
+
