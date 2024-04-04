@@ -175,12 +175,13 @@ body{
     font-size: 24px;
     border-radius: 20px;
     font-weight: 700;
+    border:2px solid #A4243B;
 }
 
 .bookNowButton:Hover{
     background-color:#ffffff;
     color: #A4243B;
-    border:2px solid #A4243B;
+    
 }
 
 .flexContainer2{
@@ -231,6 +232,7 @@ body{
     align-items: center;
     margin: 0px;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 .flexContainer6{
     display: flex;
@@ -303,7 +305,7 @@ body{
 
 .bookTripNowButton{
     background-color: #A4243B;
-    border: none;
+    border: 2px solid #A4243B;
     color: #ffffff;
     padding: 25px 80px;
     text-align: center;
@@ -317,7 +319,6 @@ body{
 .bookTripNowButton:Hover{
     background-color:#ffffff;
     color: #A4243B;
-    border:2px solid #A4243B;
 }
 
 .headerBGContainerF{
@@ -601,7 +602,13 @@ body{
     box-sizing: border-box;
     padding: 5px 80px;
     background-color: #A4243B;
+    border: 2px solid #A4243B;
 }
+.flexFlightItem9--end:hover{
+    background-color:#ffffff;
+    color: #A4243B;
+}
+
 .flexFlightItem8 img{
     width: 100%;
     padding: 0;
@@ -636,19 +643,33 @@ body{
     background-color: #98D5FF;
 }
 .viewCartBtn{
-    position: absolute;
+    max-width: 250px;
+    max-height: 80px;
     box-sizing: border-box;
     padding: 3px 80px;
     text-align: center;
     justify-content: center;
     background-color: #A4243B;
-    right: 20px;
-    bottom: -740%;
     font-size: 20px;
     border-radius: 20px;
     font-weight: 600;
     box-sizing: border-box;
     color: #ffffff;
+    margin-left: 70%;
+    border: 2px solid #A4243B;
+}
+.viewCartBtn:hover{
+    background-color:#ffffff;
+    color: #A4243B;
+}
+
+#moonSection{
+    background-color: #5815B2;
+    padding-bottom: 40px;
+}
+
+#moonContainer{
+    padding-bottom: 0;
 }
 
 .flexContactContainer1{
@@ -658,7 +679,7 @@ body{
     justify-content: center;
     align-content: center;
     margin: 0px 100px;
-    gap: 50px;
+    gap: 20px;
 }
 .flexContactItem1{
     flex: 50%;
@@ -754,6 +775,7 @@ body{
     align-content: center;
     min-width: fit-content;
     gap: 5px;
+    margin-left: 200px;
 }
 .flexContactContainer8 p{
     flex: 50%;
@@ -770,3 +792,200 @@ body{
     flex: 30%;
 }
 
+footer h3{
+    margin-top: 0;
+}
+footer{
+    padding-top: 20px;
+}
+
+.flexContactContainer10{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width:fit-content;
+    gap: 60px;
+    margin: 30px;
+}
+.flexContactItem10{
+    flex: 50%;
+    width: 80%;
+    max-width: 80%;
+}
+.flexContactContainer11{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+.flexContactItem11{
+    flex: 50%;
+}
+.flexContactContainer12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+.flexContactItem12{
+    flex: 30%;
+}
+.flexContactItem12 h3{
+    color: #98D5FF;
+    font-size: 25px;
+    margin: 0;
+}
+.flexContactItem12 h1{
+    color:#5815B2;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.flexContactContainer13{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 70%;
+}
+.flexContactItem13{
+    flex: 20%;
+}
+.flexContactItem13 img{
+    width: 100%;
+}
+
+.flexContactContainer14{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+.flexContactItem14{
+    flex: 30%;
+}
+.flexContactItem14 h3{
+    color: #98D5FF;
+    font-size: 25px;
+    margin: 0;
+}
+.flexContactItem14 h1{
+    color:#5815B2;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.formContainer2{
+    width: 100%;
+    /*max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    */
+}
+
+#contact2{
+    background-image: url(../RedPlanetVenturesAssetsAndDesign/Assets/Images/formBack.png);
+    background-size: cover;
+    background-position: right;
+    /*background-color: #f9f9f9; */
+    padding: 2em 4em;
+    max-width: 100%;
+    border-radius: 30px;
+    padding-right: 6em;
+}
+#contact2 h3{
+    color: #ffffff;
+    display: block;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 2    0px;
+}
+#contact2 p1{
+    color: #ffffff;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+
+#contact2 input, #contact2 textarea, #contact2 button{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+fieldset{
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+#contact2 input, #contact2 textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color:rgb(255, 255, 255);
+    color: #000000;
+    margin: 0 0 20px;
+    padding: 25px 10px;
+    border-radius: 15px;
+}
+
+::placeholder{
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+    font-size: 20px;
+}
+#contact2 textarea{
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+#contact2 button{
+    cursor: pointer;
+    width: 45%;
+    height: 70px;
+    border: none;
+    background-color:#A4243B;
+    color: #ffffff;
+    padding: 8px;
+    border: 2px solid #A4243B;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-bottom: 20PX;
+}
+#contact2 button:hover{
+    color: #A4243B;
+    background-color: #ffffff;
+}
+
+#contact2 input:hover, #contact2 textarea:hover{
+    background-color:rgba(240, 255, 255, 0.788);
+}
+
+#contact2 input:focus, #contact2 textarea:focus{
+    background-color:rgba(240, 255, 255, 0.788);
+}
