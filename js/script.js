@@ -1,11 +1,6 @@
 
-/*          Page keeps reloading for some reason when i press submit 
-            tried removing the code line by line to find the problem but couldnt,
-            removed all JS and it still refreshed page
-            not sure what to change in the HTML
-
 let form=document.forms["contact2"];
-form.addEventListener("submitButton",formConfirmation);
+form.addEventListener("submit",formConfirmation);
 function formConfirmation(event){
     event.preventDefault();
     let formData = {
@@ -16,7 +11,7 @@ function formConfirmation(event){
     }
     alert(formData.name+" thank you for your submission!");
 }
-*/
+
 let cart=[];
 let ticketNumMars=1;
 function marsTripAdd(){

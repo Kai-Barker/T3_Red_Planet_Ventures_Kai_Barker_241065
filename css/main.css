@@ -19,6 +19,11 @@ body{
     position: relative;
 }
 
+.py-1{
+    padding-top: 0;
+    margin-top: 0;
+}
+
 .topNav{
     display: flex;
     flex-direction: row;
@@ -142,14 +147,18 @@ body{
     position:absolute;
     top: 45%;
     left:15px;
-    max-width: 5%;
+    max-width: 8%;
+    background:none;
+    border: none;
 }
 
 .arrowR{
     position:absolute;
     top: 45%;
     right:15px;
-    max-width: 5%;
+    max-width: 8%;
+    background:none;
+    border: none;
 }
 
 
@@ -270,10 +279,12 @@ body{
     margin:5px;
     font-size: 40px;
     color: #ffffff;
+    font-weight: 800;
 }
 .flexContainer6 h3{
     margin: 5px;
-    color: #98D5FF
+    color: #98D5FF;
+    font-weight: 700;
 }
 .flexItem6{
     flex:20%;
@@ -288,6 +299,8 @@ body{
 
 .flexItem6 h1{
     margin: 0px;
+    font-size: 30px;
+    font-weight: bolder;
 }
 .flexItem6 p{
     margin: 0px;
@@ -366,7 +379,7 @@ body{
 }
 .bookAFlight{
     position:absolute;
-    top: 65%;
+    top: 35%;
     left:50%;
     transform: translate(-50%,-50%);
     font-family: 'Porter Sans Heading';
@@ -699,6 +712,7 @@ body{
 }
 .flexContactItem3{
     flex: 50%;
+    margin:5px;
 }
 .flexContactItem3 img{
     width: 100%;
@@ -767,7 +781,7 @@ body{
     align-content: center;
     min-width: fit-content;
     gap: 5px;
-    margin-left: 200px;
+    margin-left: 10px;
 }
 .flexContactContainer8 p{
     flex: 50%;
@@ -805,8 +819,7 @@ footer{
 .flexContactItem10{
     flex: 50%;
     width: 100%;
-    height: 106vh;
-    max-height: 106vh;
+
 }
 .flexContactContainer11{
     display: flex;
@@ -1017,4 +1030,9 @@ fieldset{
 
 #contact2 input:focus, #contact2 textarea:focus{
     background-color:rgba(240, 255, 255, 0.788);
+}
+
+.footerLine{
+    padding: 1px;
+    background-color:#d3d3d3;
 }
