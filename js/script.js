@@ -21,19 +21,19 @@ function marsTripAdd(){
 }
 let ticketNumNept=1;
 function neptTripAdd(){
-    for (let index = 0; index < ticketNumNept; index++) {
+    for (let i = 0; i < ticketNumNept; i++) {
         cart.push("Neptune")
     }
 }
 let ticketNumJupi=1;
 function jupiTripAdd(){
-    for (let index = 0; index < ticketNumJupi; index++) {
+    for (let i = 0; i < ticketNumJupi; i++) {
         cart.push("Jupiter")
     }
 }
 let ticketNumSatu=1;
 function satuTripAdd(){
-    for (let index = 0; index < ticketNumSatu; index++) {
+    for (let i = 0; i < ticketNumSatu; i++) {
         cart.push("Saturn")
     }
 }
