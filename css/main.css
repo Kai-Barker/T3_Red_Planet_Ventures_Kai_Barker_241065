@@ -582,7 +582,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     gap: 30px;
     min-width: 15em;
@@ -602,6 +602,9 @@ body{
     border-radius: 20px;
     font-weight: 600;
     box-sizing: border-box;
+}
+.flexFlightItem9 p{
+    margin-bottom: 0%;
 }
 .flexFlightItem9--end{
     box-sizing: border-box;
@@ -1057,4 +1060,11 @@ fieldset{
 
 #spaceInterior{
     border-radius: 30px;
+}
+
+.modal-footer{
+    background-color: #5815B2;
+}
+.modal-header{
+    background-color: #5815B2;
 }

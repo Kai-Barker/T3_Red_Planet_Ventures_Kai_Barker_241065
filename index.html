@@ -29,7 +29,7 @@
             <form class="d-flex form-inline  mx-5 bg-light p-2" style="border-radius: 10px;">
                 <button class="btn "><img src="RedPlanetVenturesAssetsAndDesign/Assets/Images/search.png"></button>
                 <input class="form-control border-0 bg-light" type="search" placeholder="Search">
-                <button class="btn"><img src="RedPlanetVenturesAssetsAndDesign/Assets/Images/shopping-basket.png"></button>
+                <button class="btn" type="button" onclick="unPackCart();" data-bs-toggle="modal" data-bs-target="#cartModal"><img src="RedPlanetVenturesAssetsAndDesign/Assets/Images/shopping-basket.png"></button>
                 
             </form>
 
@@ -38,6 +38,43 @@
     </nav>
                 <div class="botLeftH">RED PLANET <br> VENTURES</div>
                 <div class="botLeftP">EXPLORE THE SOLAR SYSTEM</div>
+                <div class="modal rounded-3" id="cartModal">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-white">Your Cart</h4>
+                                <button type="button" class="btn-close color-white" data-bs-dismiss="modal"></button>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <div class="container-lg">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-3">
+                                            <img class="img-fluid" id="spaceInterior" src="RedPlanetVenturesAssetsAndDesign/Assets/Images/flighhtMars.png">
+                                        </div>
+                                        <div class="col-1"></div>
+                                        <div class="col-5">
+                                            <div>
+                                                <p class=" fs-1 fw-bolder" style="color: #5815B2;">Planet Heading</p>
+                                            </div>
+                                            <div class="row justify-content-center align-items-center">
+                                                <p class="ticketNum">Total tickets to x: x</p>
+                                                <p class="ticketTotal">Total for this trip: Rxx.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="modal-footer">
+                                <p class="totalCost px-5 mx-5 text-white fw-bold fs-4">Total: Rxxxxxxx.00</p>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Check Out</button>
+                                <button type="button" href="index.html" class="btn" style="background-color: #98D5FF;" data-bs-dismiss="modal">Continue Shopping</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </section>
     <!--
     <header>

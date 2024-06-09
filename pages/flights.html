@@ -32,13 +32,139 @@
                     <form class="d-flex form-inline  mx-5 bg-light p-2" style="border-radius: 10px;">
                         <button class="btn "><img src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/search.png"></button>
                         <input class="form-control border-0 bg-light" type="search" placeholder="Search">
-                        <button class="btn"><img src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/shopping-basket.png"></button>
+                        <button class="btn" type="button" onclick="unPackCart();" data-bs-toggle="modal" data-bs-target="#cartModal"><img src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/shopping-basket.png"></button>
                         
                     </form>
                 </div>
                 
             </nav>
             <div class="bookAFlight">Book A Flight</div>
+            <div class="modal rounded-3" id="cartModal">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header" id="modalHeader">
+                            <h4 class="modal-title text-white">Your Cart</h4>
+                            <button type="button" class="btn-close color-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        
+                        <div class="modal-body" >
+                            <div id="modalBody">
+                            <!--Add a section for each planet and if numtickets 0 change the innerHTML for that section to nothing-->
+                            <div class="container-lg my-4" id="marsBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="marsImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flighhtMars.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">The Classic Mars Experience</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToMars">Total tickets to mars: </p>
+                                            <p class="ticketTotal" id="ticketTotalMars">Total for this trip: Rxx.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-lg my-4" id="neptBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="neptImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightNeptune.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">The Classic nept Experience</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToNept">Total tickets to mars: </p>
+                                            <p class="ticketTotal" id="ticketTotalNept">Total for this trip: Rxx.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-lg my-4" id="jupiBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="jupiImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightJupiter.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">The Classic jupi Experience</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToJupi">Total tickets to mars: </p>
+                                            <p class="ticketTotal" id="ticketTotalJupi">Total for this trip: Rxx.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-lg my-4" id="satuBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3" id="satuImg">
+                                        <img class="img-fluid" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightSaturn.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">The Classic satu Experience</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToSatu">Total tickets to mars: </p>
+                                            <p class="ticketTotal" id="ticketTotalSatu">Total for this trip: Rxx.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-lg my-4" id="uranBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="uranImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightUranus.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">The Classic uran Experience</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToUran">Total tickets to mars: </p>
+                                            <p class="ticketTotal" id="ticketTotalUran">Total for this trip: Rxx.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-lg my-4" id="moonBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="moonImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightMoon.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">The Classic moon Experience</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToMoon">Total tickets to mars: </p>
+                                            <p class="ticketTotal" id="ticketTotalMoon">Total for this trip: Rxx.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        </div>
+
+                        
+                        <div class="modal-footer">
+                            <p class="ticketTotal px-5 mx-5 text-white fw-bold fs-4" id="allTicketTotal">Total: Rxxxxxxx.00</p>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Check Out</button>
+                            <button type="button" href="index.html" class="btn" style="background-color: #98D5FF;" data-bs-dismiss="modal">Continue Shopping</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </section>
     <section>
         <div class="flexFlightContainer1">
@@ -107,7 +233,11 @@
                             <div class="flexFlightItem7"> <!--Buttons-->
                                 <div class="flexFlightContainer9">
                                     <div name="ticketNumMars" class="flexFlightItem9">
-                                        <p>-&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                                        <div class="flexFlightButtonContainer row justify-content-center align-items-center">
+                                            <button type="button" onclick="marsTickSub();" class="col-4 text-white" style="background: none; border: 0; text-align: start;" id="marsSub">-</button>
+                                            <p class="col-4" id="marsTick">0</p>
+                                            <button type="button" onclick="marsTickAdd();" class="col-4 text-white" style="background: none; border: 0;" id="marsAdd">+</button>
+                                        </div>
                                     </div>
                                     <div name="marsTripAdd" class="flexFlightItem9 flexFlightItem9--end">
                                         <p>Book&nbsp;Now</p>
@@ -164,7 +294,11 @@
                             <div class="flexFlightItem7"> <!--Buttons-->
                                 <div class="flexFlightContainer9">
                                     <div name="ticketNumNept" class="flexFlightItem9 flexFlightItem9--altColour">
-                                        <p>-&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                                        <div class="flexFlightButtonContainer row justify-content-center align-items-center">
+                                            <button type="button" onclick="neptTickSub();" class="col-4 text-white" style="background: none; border: 0; text-align: start;" id="neptSub">-</button>
+                                            <p class="col-4" id="neptTick">0</p>
+                                            <button type="button" onclick="neptTickAdd();" class="col-4 text-white" style="background: none; border: 0;" id="neptAdd">+</button>
+                                        </div>
                                     </div>
                                     <div name="neptTripAdd" class="flexFlightItem9 flexFlightItem9--end">
                                         <p>Book&nbsp;Now</p>
@@ -221,7 +355,11 @@
                             <div class="flexFlightItem7"> <!--Buttons-->
                                 <div class="flexFlightContainer9">
                                     <div name="ticketNumJupi" class="flexFlightItem9">
-                                        <p>-&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                                        <div class="flexFlightButtonContainer row justify-content-center align-items-center">
+                                            <button type="button" onclick="jupiTickSub();" class="col-4 text-white" style="background: none; border: 0; text-align: start;" id="jupiSub">-</button>
+                                            <p class="col-4" id="jupiTick">0</p>
+                                            <button type="button" onclick="jupiTickAdd();" class="col-4 text-white" style="background: none; border: 0;" id="jupiAdd">+</button>
+                                        </div>
                                     </div>
                                     <div name="jupiTripAdd" class="flexFlightItem9 flexFlightItem9--end">
                                         <p>Book&nbsp;Now</p>
@@ -280,7 +418,11 @@
                             <div class="flexFlightItem7"> <!--Buttons-->
                                 <div class="flexFlightContainer9">
                                     <div name="ticketNumSatu" class="flexFlightItem9 flexFlightItem9--altColour">
-                                        <p>-&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                                        <div class="flexFlightButtonContainer row justify-content-center align-items-center">
+                                            <button type="button" onclick="satuTickSub();" class="col-4 text-white" style="background: none; border: 0; text-align: start;" id="satuSub">-</button>
+                                            <p class="col-4" id="satuTick">0</p>
+                                            <button type="button" onclick="satuTickAdd();" class="col-4 text-white" style="background: none; border: 0;" id="satuAdd">+</button>
+                                        </div>
                                     </div>
                                     <div name="satuTripAdd" class="flexFlightItem9 flexFlightItem9--end">
                                         <p>Book&nbsp;Now</p>
@@ -339,7 +481,11 @@
                             <div class="flexFlightItem7"> <!--Buttons-->
                                 <div class="flexFlightContainer9">
                                     <div name="ticketNumUran" class="flexFlightItem9">
-                                        <p>-&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                                        <div class="flexFlightButtonContainer row justify-content-center align-items-center">
+                                            <button type="button" onclick="uranTickSub();" class="col-4 text-white" style="background: none; border: 0; text-align: start;" id="uranSub">-</button>
+                                            <p class="col-4" id="uranTick">0</p>
+                                            <button type="button" onclick="uranTickAdd();" class="col-4 text-white" style="background: none; border: 0;" id="uranAdd">+</button>
+                                        </div>
                                     </div>
                                     <div name="uranTripAdd" class="flexFlightItem9 flexFlightItem9--end">
                                         <p>Book&nbsp;Now</p>
@@ -397,7 +543,11 @@
                             <div class="flexFlightItem7"> <!--Buttons-->
                                 <div class="flexFlightContainer9">
                                     <div name="ticketNumMoon" class="flexFlightItem9 flexFlightItem9--altColour">
-                                        <p>-&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                                        <div class="flexFlightButtonContainer row justify-content-center align-items-center">
+                                            <button type="button" onclick="moonTickSub();" class="col-4 text-white" style="background: none; border: 0; text-align: start;" id="moonSub">-</button>
+                                            <p class="col-4" id="moonTick">0</p>
+                                            <button type="button" onclick="moonTickAdd();" class="col-4 text-white" style="background: none; border: 0;" id="moonAdd">+</button>
+                                        </div>
                                     </div>
                                     <div name="moonTripAdd" class="flexFlightItem9 flexFlightItem9--end">
                                         <p>Book&nbsp;Now</p>
