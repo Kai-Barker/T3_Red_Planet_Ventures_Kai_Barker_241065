@@ -1,12 +1,19 @@
 
 let form=document.forms["contact2"];
-let ticketNumMars=1;
-let ticketNumNept=2;
-let ticketNumJupi=3;
-let ticketNumSatu=4;
-let ticketNumUran=5;
-let ticketNumMoon=6;
+let ticketNumMars=0;
+let ticketNumNept=0;
+let ticketNumJupi=0;
+let ticketNumSatu=0;
+let ticketNumUran=0;
+let ticketNumMoon=0;
 let cart=[];
+let mars=``;
+let nept=``;
+let jupi=``;
+let uran=``;
+let satu=``;
+let moon=``;
+
 const marsPrice=25000;
 const neptunePrice=45000;
 const jupiterPrice=65000;
@@ -30,6 +37,10 @@ function marsTickSub(){
     if (ticketNumMars>0) {
         ticketNumMars-=1;
         marsTickNum.innerHTML=ticketNumMars;
+
+    }
+    else{
+        //Set boolean to false
     }
 }
 function marsTickAdd(){
@@ -129,6 +140,130 @@ function moonTripAdd(){
         cart.push("Moon")
     }
 }
+function definePlanets(){
+    let modalBody=document.getElementById("modalBody");
+    modalBody.innerHTML=null;
+    if (ticketNumMars>0) {
+        mars=`<div class="container-lg my-4" id="marsBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="marsImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flighhtMars.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">The Classic Mars Experience</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToMars">Total tickets to mars: ${ticketNumMars} </p>
+                                            <p class="ticketTotal" id="ticketTotalMars">Total for this trip: R${ticketNumMars*marsPrice}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+        modalBody.innerHTML+=mars;
+    }
+    if (ticketNumNept>0) {
+    let nept=`<div class="container-lg my-4" id="neptBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="neptImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightNeptune.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">Neptune’s Cosmic Dive</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToNept">Total tickets to Neptune: ${ticketNumNept} </p>
+                                            <p class="ticketTotal" id="ticketTotalNept">Total for this trip: R${ticketNumNept*neptunePrice}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+                            modalBody.innerHTML+=nept;
+    }
+    if (ticketNumJupi>0) {
+    let jupi=`<div class="container-lg my-4" id="jupiBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="jupiImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightJupiter.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">The Giant’s Journey</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToJupi">Total tickets to Jupiter: ${ticketNumJupi} </p>
+                                            <p class="ticketTotal" id="ticketTotalJupi">Total for this trip: R${ticketNumJupi*jupiterPrice} </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+                            modalBody.innerHTML+=jupi;
+    }
+    if (ticketNumSatu>0) {
+    let satu=`<div class="container-lg my-4" id="satuBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3" id="satuImg">
+                                        <img class="img-fluid" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightSaturn.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">Ring Around a Saturn</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToSatu">Total tickets to Saturn: ${ticketNumSatu} </p>
+                                            <p class="ticketTotal" id="ticketTotalSatu">Total for this trip: R${ticketNumSatu*saturnPrice}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+                            modalBody.innerHTML+=satu;
+    }
+    if (ticketNumUran>0) {
+    let uran=`<div class="container-lg my-4" id="uranBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="uranImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightUranus.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">Uranus Uncharted</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToUran">Total tickets to Uranus: ${ticketNumUran} </p>
+                                            <p class="ticketTotal" id="ticketTotalUran">Total for this trip: R${ticketNumUran*uranusPrice}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+                            modalBody.innerHTML+=uran;
+    }
+    if (ticketNumMoon>0) {
+    let moon=`<div class="container-lg my-4" id="moonBody">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" id="moonImg" src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/flightMoon.png">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div>
+                                            <p class=" fs-1 fw-bolder" style="color: #5815B2;">Moonlight Meander</p>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center">
+                                            <p id="ticketToMoon">Total tickets to Moon: ${ticketNumMoon} </p>
+                                            <p class="ticketTotal" id="ticketTotalMoon">Total for this trip: R${ticketNumMoon*moonPrice}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+                            modalBody.innerHTML+=moon;
+    }
+}
 
 function unPackCart(){
     let totalCost=0;
@@ -139,16 +274,9 @@ function unPackCart(){
     satuTripAdd();
     uranTripAdd();
     moonTripAdd();
-    let marsBodyHTML=document.getElementById("marsBody").outerHTML;
-    alert(marsBodyHTML);
-    let neptBodyHTML=document.getElementById("neptBody").outerHTML;
-    let jupiBodyHTML=document.getElementById("jupiBody").outerHTML;
-    let satuBodyHTML=document.getElementById("satuBody").outerHTML;
-    let uranBodyHTML=document.getElementById("uranBody").outerHTML;
-    let moonBodyHTML=document.getElementById("moonBody").outerHTML;
-    let modalBody=document.getElementById("modalBody").outerHTML;
-    modalBody=modalBody.innerHTML="";
-    alert(modalBody);
+
+
+
     
     
     for (let index = 0; index < cart.length; index++) {
@@ -179,61 +307,14 @@ function unPackCart(){
         }
         console.log(index);
     }
-    if (ticketNumMars>0) {
-        modalBody.innerHTML+=marsBodyHTML;
-        let ticketToMars=document.getElementById("ticketToMars");
-        ticketToMars.innerHTML="Total tickets to mars: "+ticketNumMars;
-        let ticketTotalMars=document.getElementById("ticketTotalMars");
-        ticketTotalMars.innerHTML="Total for this trip: R"+ticketNumMars*marsPrice;
-        marsBodyHTML=document.getElementById("marsBody").outerHTML;
-        modalBody.innerHTML=marsBodyHTML;
+    if(totalCost>0){
+        definePlanets();
     }
-    if (ticketNumNept>0) {
-        modalBody.innerHTML+=neptBodyHTML;
-        let ticketToNept=document.getElementById("ticketToNept");
-        ticketToNept.innerHTML="Total tickets to neptune: "+ticketNumNept;
-        let ticketTotalNept=document.getElementById("ticketTotalNept");
-        ticketTotalNept.innerHTML="Total for this trip: R"+ticketNumNept*neptunePrice;
-        neptBodyHTML=document.getElementById("neptBody").outerHTML;
-        modalBody.innerHTML=neptBodyHTML;
+    else{
+        let modalBody=document.getElementById("modalBody");
+        modalBody.innerHTML=`<p>Your cart is empty</p>`;
     }
-    if (ticketNumJupi>0) {
-        modalBody.innerHTML+=jupiBodyHTML;
-        let ticketToJupi=document.getElementById("ticketToJupi");
-        ticketToJupi.innerHTML="Total tickets to Jupiter: "+ticketNumJupi;
-        let ticketTotalJupi=document.getElementById("ticketTotalJupi");
-        ticketTotalJupi.innerHTML="Total for this trip: R"+ticketNumJupi*jupiterPrice;
-        jupiBodyHTML=document.getElementById("jupiBody").outerHTML;
-        modalBody.innerHTML=jupiBodyHTML;
-    }
-    if (ticketNumSatu>0) {
-        modalBody.innerHTML+=satuBodyHTML;
-        let ticketToSatu=document.getElementById("ticketToSatu");
-        ticketToSatu.innerHTML="Total tickets to Saturn: "+ticketNumSatu;
-        let ticketTotalSatu=document.getElementById("ticketTotalSatu");
-        ticketTotalSatu.innerHTML="Total for this trip: R"+ticketNumSatu*saturnPrice;
-        satuBodyHTML=document.getElementById("satuBody").outerHTML;
-        modalBody.innerHTML=satuBodyHTML;
-    }
-    if (ticketNumUran>0) {
-        modalBody.innerHTML+=uranBodyHTML;
-        let ticketToUran=document.getElementById("ticketToUran");
-        ticketToUran.innerHTML="Total tickets to Uranus: "+ticketNumUran;
-        let ticketTotalUran=document.getElementById("ticketTotalUran");
-        ticketTotalUran.innerHTML="Total for this trip: R"+ticketNumUran*uranusPrice;
-        uranodyHTML=document.getElementById("uranBody").outerHTML;
-        modalBody.innerHTML=uranBodyHTML;
-    }
-    if (ticketNumMoon>0) {
-        modalBody.innerHTML+=moonBodyHTML;
-        let ticketToMoon=document.getElementById("ticketToMoon");
-        ticketToMoon.innerHTML="Total tickets to Moon: "+ticketNumMoon;
-        let ticketTotalMoon=document.getElementById("ticketTotalMoon");
-        ticketTotalMoon.innerHTML="Total for this trip: R"+ticketNumMoon*moonPrice;
-        moonBodyHTML=document.getElementById("moonBody").outerHTML;
-        modalBody.innerHTML=moonBodyHTML;
-    }
-
+    
     let totalPriceHTML=document.getElementById("allTicketTotal");
     totalPriceHTML.innerHTML="Total: R"+totalCost+".00";
 }

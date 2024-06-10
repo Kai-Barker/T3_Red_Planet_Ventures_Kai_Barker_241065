@@ -510,8 +510,7 @@ body{
     max-height: 80%;
 }
 .flexFlightItem5 img{
-    width: 70%;
-    max-height: 80%;
+    width: 80%;
     padding-left: 8em;
 }
 .flexFlightContainer6{
@@ -540,7 +539,7 @@ body{
     flex: 25%;
 }
 .flexFlightItem7 h1{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 900;
     margin: 0;
 }
@@ -552,7 +551,7 @@ body{
 }
 .flexFlightItem7 P{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 17px;
 }
 .flexFlightContainer8{
     display: flex;
@@ -608,7 +607,7 @@ body{
 }
 .flexFlightItem9--end{
     box-sizing: border-box;
-    padding: 5px 80px;
+    padding: 10px 80px;
     background-color: #A4243B;
     border: 2px solid #A4243B;
 }
