@@ -323,5 +323,29 @@ function removeCartItem(item){
     const indexRemove=cart.indexOf(item);
     cart.splice(indexRemove, 1)
 }
+function search_flights() {
+    console.log(document.getElementById("list"))
+    let input = document.getElementById('searchbar').value;
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('flights');
+  
+    for (i = 0; i < x.length; i++) {
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.display = "none";
+      }
+      else {
+        x[i].style.display = "list-item";
+      }
+    }
+}
+function showSearch() {
+    if(document.getElementById("list").classList.contains("show")){
+        document.getElementById("list").classList.remove("show");
+    }
+    else{
+        document.getElementById("list").classList.add("show");
+    }
+
+  }
 
 
