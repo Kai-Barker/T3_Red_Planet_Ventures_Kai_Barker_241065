@@ -23,12 +23,21 @@
             <div class="text-dark">
                 <a class="text-decoration-none text-danger opacity-75 mx-3 fw-bold fs-4" href="index.html">Home</a>
                 <a class="text-decoration-none text-dark opacity-75 mx-3 fw-bold fs-5" href="pages/flights.html">Flights</a>
-                <a class="text-decoration-none text-dark opacity-75 mx-3 fw-bold fs-5" href="pages/contact.html">Contact</a>
                 <a class="text-decoration-none text-dark opacity-75 mx-3 fw-bold fs-5" href="pages/about.html">About Us</a>
+                <a class="text-decoration-none text-dark opacity-75 mx-3 fw-bold fs-5" href="pages/contact.html">Contact</a>
+                
             </div>
             <form class="d-flex form-inline  mx-5 bg-light p-2" style="border-radius: 10px;">
                 <button class="btn "><img src="RedPlanetVenturesAssetsAndDesign/Assets/Images/search.png"></button>
-                <input class="form-control border-0 bg-light" type="search" placeholder="Search">
+                <input class="search form-control border-0 bg-light" onkeyup="search_flights()" type="text" placeholder="Search flights" name="search" id="searchbar" onclick="showSearch()">
+                        <ul class="searchDropdown" id="list" onclick="showSearch()">
+                            <a href="pages/flights.html#mars"><li class="flights">The Classic Mars Experience</li></a>
+                            <a href="pages/flights.html#neptune"><li class="flights">Neptune’s Cosmic Dive</li></a>
+                            <a href="pages/flights.html#jupiter"><li class="flights">The Giant’s Journey</li></a>
+                            <a href="pages/flights.html#saturn"><li class="flights">Ring Around a Saturn</li></a>
+                            <a href="pages/flights.html#uranus"><li class="flights">Uranus Uncharted</li></a>
+                            <a href="pages/flights.html#moon"><li class="flights">Moonlight Meander</li></a>
+                        </ul>
                 <button class="btn" type="button" onclick="unPackCart();" data-bs-toggle="modal" data-bs-target="#cartModal"><img src="../RedPlanetVenturesAssetsAndDesign/Assets/Images/shopping-basket.png"></button>
                 
             </form>
