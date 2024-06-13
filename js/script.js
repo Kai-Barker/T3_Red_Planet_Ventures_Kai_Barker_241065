@@ -318,11 +318,6 @@ function unPackCart(){
     let totalPriceHTML=document.getElementById("allTicketTotal");
     totalPriceHTML.innerHTML="Total: R"+totalCost+".00";
 }
-
-function removeCartItem(item){
-    const indexRemove=cart.indexOf(item);
-    cart.splice(indexRemove, 1)
-}
 function search_flights() {
     console.log(document.getElementById("list"))
     let input = document.getElementById('searchbar').value;
